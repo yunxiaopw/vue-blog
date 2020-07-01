@@ -50,7 +50,7 @@
       </v-btn>
     </v-app-bar>
 
-    <!-- sideBar -->
+    <!-- sideBar left-->
     <v-navigation-drawer app v-model="drawer" class="success">
       <v-layout column align-center>
         <v-flex class="mt-5">
@@ -66,10 +66,13 @@
         <v-col cols="5">
           <v-btn icon block class="black--text">
             <v-icon>mdi-github</v-icon>
-            <a style="color:black" 
-               target="_blank"
-               href="https://github.com/pstXZ">github</a>
-          </v-btn> 
+            <a
+              style="color:black"
+              target="_blank"
+              href="https://github.com/pstXZ"
+              >github</a
+            >
+          </v-btn>
         </v-col>
         <v-col cols="5">
           <v-btn icon block class="black--text">
@@ -79,28 +82,137 @@
         </v-col>
       </v-row>
       <v-divider></v-divider>
-      <v-container>
-        <div class="newArticle">最新文章</div>        
-        <div class="art-content">- 由浅入深，66条JavaScript面试知识点</div>
-        <div class="art-content">- 由浅入深，66条JavaScript面试知识点</div>
-        <div class="art-content">- 由浅入深，66条JavaScript面试知识点</div>
-      </v-container>
+      <v-row>
+        <v-col cols="12" sm="12">
+          <v-list>
+            <v-subheader class="newArticle">最新文章</v-subheader>
+            <v-list-item @click="a">
+              <v-list-item-content>
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-list-item-title v-bind="attrs" v-on="on">
+                      JavaScript面试知识点目总结By周攀蔚
+                    </v-list-item-title>
+                  </template>
+                  <span>JavaScript面试知识点目总结By周攀蔚</span>
+                </v-tooltip>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item @click="a">
+              <v-list-item-content>
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-list-item-title v-bind="attrs" v-on="on">
+                      JavaScript面试知识点目总结By周攀蔚
+                    </v-list-item-title>
+                  </template>
+                  <span>JavaScript面试知识点目总结By周攀蔚</span>
+                </v-tooltip>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item @click="a">
+              <v-list-item-content>
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-list-item-title v-bind="attrs" v-on="on">
+                      JavaScript面试知识点目总结By周攀蔚
+                    </v-list-item-title>
+                  </template>
+                  <span>JavaScript面试知识点目总结By周攀蔚</span>
+                </v-tooltip>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-col>
+      </v-row>
       <v-divider></v-divider>
       <v-container>
-        <div>标签</div>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ff9c0a">react</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#f44336">vue</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#9652ff">javascript</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ffaac2">css</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ff9c0a">react</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#f44336">vue</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#9652ff">javascript</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ffaac2">css</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ff9c0a">react</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#f44336">vue</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#9652ff">javascript</v-chip>
-        <v-chip small class="white--text caption mx-1 my-2" color="#ffaac2">css</v-chip>
-      </v-container>     
+        <v-subheader class="label">标签</v-subheader>
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ff9c0a"
+          >react</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#f44336"
+          >vue</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#9652ff"
+          >javascript</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ffaac2"
+          >css</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ff9c0a"
+          >react</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#f44336"
+          >vue</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#9652ff"
+          >javascript</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ffaac2"
+          >css</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ff9c0a"
+          >react</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#f44336"
+          >vue</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#9652ff"
+          >javascript</v-chip
+        >
+        <v-chip
+          label
+          small
+          class="white--text caption mx-1 my-2"
+          color="#ffaac2"
+          >css</v-chip
+        >
+      </v-container>
     </v-navigation-drawer>
   </nav>
 </template>
@@ -118,6 +230,11 @@ export default {
       ],
     }
   },
+  methods: {
+    a() {
+      console.log('aaa')
+    },
+  },
 }
 </script>
 <style scoped>
@@ -125,14 +242,17 @@ export default {
   text-align: center;
   font-size: 20px;
 }
-.newArticle {
+.newArticle,
+.label {
   font-weight: 600;
 }
 .art-content {
   margin-top: 16px;
   font-size: 14px;
+  display: block;
+  width: 100%;
 }
 a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 </style>
